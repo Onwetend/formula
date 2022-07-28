@@ -1,0 +1,347 @@
+// stylelint-disable at-rule-empty-line-before
+
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+@import "helpers";
+
+@import "components/header";
+@import "components/footer";
+
+@import "pages/home";
+
+html {
+  font-family: $font-primary;
+  font-size: 14px;
+}
+
+img {
+  height: 300px;
+}
+
+button {
+  display: block;
+  border: none;
+  border-radius: 15px;
+  padding: 18px 28px;
+  color: #fff;
+  background: #207FF1;
+}
+
+hr {
+  margin-left: 0;
+  border-top: 3px solid #207FF1;
+  width: 105px;
+}
+
+// ----- Navigation section ----- //
+
+.nav {
+  vertical-align: middle;
+  border-radius: 0px 0px 30px 30px;
+  padding: 22px 20px 22px;
+  background: #F7FAFD;
+
+  h1 {
+    margin-top: 10px;
+    margin-left: 51px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  span {
+    width: 100%;
+  }
+}
+
+// ----- END Navigation section ----- //
+
+// ----- Main section ----- //
+
+.main-section {
+  padding: 24px 20px 74px;
+
+  h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  p {
+    margin-bottom: 40px;
+    line-height: 22px;
+    color: #2B2B2B;
+    opacity: 0.9;
+  }
+
+  button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+// ----- END Main section ----- //
+
+// ----- About section ----- //
+
+.about {
+
+  &__container {
+    padding: 25px 20px 21px;
+    background: #F1F6FC;
+
+    h1 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    hr {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 50px;
+      line-height: 22px;
+      color: #2B2B2B;
+      opacity: 0.9;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-auto-rows: 1fr;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 28px 30px 30px;
+    width: 100%;
+    background: #fff;
+
+    span {
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 45px;
+      line-height: 0;
+      color: #207FF1;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 45px;
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 16px;
+      color: #767676;
+    }
+  }
+}
+
+// ----- END About section ----- //
+
+// ----- Offer section ----- //
+
+.offer {
+  padding: 46px 20px 22px;
+  background-image: url('../images/offer.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    background-image: url('../images/offer@2x.jpg');
+  }
+
+  h1 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 32px;
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 114px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+  }
+
+  input {
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    padding: 16px 21px 17px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABABAB;
+    background: #fff;
+  }
+
+  button {
+    width: 100%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .form {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+// ----- END Offer section ----- //
+
+// ----- News section ----- //
+
+.news {
+  padding: 63px 20px 17px;
+  background: #F1F6FC;
+
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  hr {
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: grid;
+    grid-auto-rows: 1fr;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    background: #fff;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      opacity: 0.9;
+    }
+
+    p {
+      margin-bottom: 50px;
+      line-height: 23px;
+      color: #767676;
+      opacity: 0.9;
+    }
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+      font-size: 15px;
+      line-height: 23px;
+      line-height: 0;
+      color: #888888;
+      opacity: 0.9;
+    }
+
+    button {
+      border-radius: 20px;
+      padding: 6px 22px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #358BF2; // Здесь в макете для текста внутри кнопки указана своя прозрачность. CSS не позволяет обратиться напрямую к текстовому узлу внутри элемента, поэтому я просто вручную пересчитал цвет, как если бы синий цвет с прозрачностью лежал на светло-синем непрозрачном фоне.
+      background: #F1F6FC;
+    }
+  }
+}
+
+// ----- END News section ----- //
+
+// ----- Contact section ----- //
+
+.contact {
+  padding: 17px 20px 37px;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 53px;
+    opacity: 0.9;
+  }
+
+  hr {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  p {
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #373737;
+    opacity: 0.9;
+  }
+
+  button {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  span {
+    margin-right: 15px;
+    margin-bottom: 50px;
+  }
+
+  &__map {
+    border-radius: 15px;
+    height: 230px;
+    background: slateblue;
+  }
+}
+
+// ----- END Contact section ----- //

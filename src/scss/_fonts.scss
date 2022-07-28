@@ -1,0 +1,5 @@
+// stylelint-disable no-empty-source
+@include font-face("../fonts/SFUIText-Regular", "SFUIText", 400, normal);
+@include font-face("../fonts/SFUIText-Medium", "SFUIText", 500, normal);
+@include font-face("../fonts/SFUIText-Semibold", "SFUIText", 600, normal);
+@include font-face("../fonts/SFUIText-Heavy", "SFUIText", 800, normal);
