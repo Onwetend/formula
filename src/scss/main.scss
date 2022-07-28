@@ -126,7 +126,7 @@ hr {
     margin-bottom: 20px;
     border-radius: 30px;
     padding: 28px 30px 30px;
-    width: 100%;
+    // width: 100%;
     background: #fff;
 
     span {
@@ -180,11 +180,22 @@ hr {
     color: #fff;
   }
 
-  p {
+  &__wrapper {
     margin-bottom: 114px;
-    line-height: 22px;
-    color: rgba(255, 255, 255, 0.7);
-    opacity: 0.9;
+
+    p {
+      line-height: 22px;
+      color: rgba(255, 255, 255, 0.7);
+      // opacity: 0.9;
+    }
+
+    p.shorter-text {
+      display: initial;
+    }
+
+    p.longer-text {
+      display: none;
+    }
   }
 
   input {
@@ -345,3 +356,169 @@ hr {
 }
 
 // ----- END Contact section ----- //
+
+
+
+
+@include desktop {
+
+  .main-section {
+    padding: 216px 250px 116px;
+
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    p {
+      width: 450px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+
+    button {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .about {
+
+    &__container {
+      padding: 120px 250px 127px;
+
+      h1 {
+        margin: 0;
+        font-size: 38px;
+        line-height: 53px;
+      }
+
+      hr {
+        margin-bottom: 0;
+      }
+
+      p {
+        width: 525px;
+        font-size: 18px;
+        line-height: 29px;
+      }
+    }
+
+    &__wrapper {
+      display: flex;
+      margin-bottom: 70px;
+
+      div {
+        width: 50%;
+      }
+    }
+
+    &__items {
+      display: grid;
+      justify-content: space-between;
+      grid-gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__item {
+      margin-bottom: 0;
+      padding-bottom: 40px;
+
+      p {
+        width: 100%;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .offer {
+    padding: 120px 350px;
+
+    h1 {
+      margin-bottom: 27px;
+      font-weight: 500;
+      font-size: 38px;
+      line-height: 45px;
+    }
+
+    &__wrapper {
+      margin-bottom: 100px;
+      width: 360px;
+
+      p {
+        width: 360px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      p.shorter-text {
+        display: none;
+      }
+
+      p.longer-text {
+        display: initial;
+      }
+    }
+
+    form {
+      width: 345px;
+
+      button {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .news {
+    padding: 120px 250px;
+
+    h1 {
+      font-size: 32px;
+      line-height: 53px;
+      opacity: 0.9;
+    }
+
+    hr {
+      margin-bottom: 50px;
+    }
+
+    &__items {
+      display: grid;
+      justify-content: space-between;
+      grid-gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+
+      h2 {
+        font-size: 23px;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    &__item:hover {
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+
+      h2 {
+        color: #207FF1;
+        opacity: 0.9;
+      }
+
+      button {
+        background: #207FF1;
+        color: #fff;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .contact {
+    padding: 120px 250px 185px;
+  }
+}
