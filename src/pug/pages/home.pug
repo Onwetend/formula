@@ -1,8 +1,9 @@
 body
 
-  nav.nav
+  //- nav.nav
     //- h1 #[span.sprite-logo] Отдел продаж
     span.sprite-logo #[h1 Отдел продаж]
+
   main
 
     section.main-section
@@ -13,10 +14,12 @@ body
       p Недвижимость – это то, чем мы живём и то, что заставляет нас двигаться вперёд. Отвечаем за результат с 2015 года
       button(type="button") Получить планировки и цены
 
-    +lazyPicture({
-      src: `${baseDir}images/main-photo.webp`,
-      alt: '',
-    }).main-photo
+    //- +lazyPicture({
+    //-   src: `${baseDir}images/main-photo.webp`,
+    //-   alt: '',
+    //- }).main-photo
+
+    section.photo
 
     section.about
       .about__container
@@ -111,19 +114,22 @@ body
               div Подробнее
 
     section.contact
-      h1 Контакты
-      hr
-      h2
-        a(href="#")
-        | +7 (495) 659-99-88
-      p
-        | г. Сочи,
-        br
-        | ул. Конституции СССР 4,
-        br
-        | 2 этаж, офис 224
-      button(type="button") Обратный звонок
-      span.sprite-icon-viber
-      span.sprite-icon-phone
-      span.sprite-icon-mail
-      .contact__map
+      .contact__items
+        .contact__item
+          h1 Контакты
+          hr
+          h2
+            a(href="#")
+            | +7 (495) 659-99-88
+          p
+            | г. Сочи,
+            br
+            | ул. Конституции СССР 4,
+            br
+            | 2 этаж, офис 224
+          button(type="button") Обратный звонок
+          span.sprite-icon-viber
+          span.sprite-icon-phone
+          span.sprite-icon-mail
+        .contact__item
+          .contact__map
