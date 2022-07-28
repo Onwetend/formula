@@ -985,7 +985,7 @@ hr {
     line-height: 16px; }
 
 .photo {
-  height: 750px;
+  height: 300px;
   background-image: url("../images/main-photo.jpg");
   background-position: center;
   background-size: cover;
@@ -1189,6 +1189,8 @@ hr {
     .main-section button {
       font-size: 16px;
       line-height: 19px; }
+  .photo {
+    height: 750px; }
   .about__container {
     padding: 120px 250px 127px; }
     .about__container h1 {
