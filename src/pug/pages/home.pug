@@ -1,11 +1,41 @@
 body
 
-  //- nav.nav
-    //- h1 #[span.sprite-logo] Отдел продаж
-    span.sprite-logo #[h1 Отдел продаж]
+  nav.nav
+    .nav__logo
+      span.sprite-logo
+      h1 Отдел продаж
+    .nav__links
+      ul
+        li
+          a(href="#") Каталог объектов
+        li
+          a(href="#") Блог
+        li
+          a(href="#") Команда
+        li
+          a(href="#") FAQ
+        li
+          a(href="#") Контакты
+    .nav__contact
+        .wrapper
+          a(href="#")
+            .sprite-nav-icon-phone
+            span +7 (495) 659-99-88
+          button(type="button") Заказать звонок
+
 
   main
+    .click-me
+      .wrapper
+        .sprite-click-me-icon-left
+        h2
+          span Акция!
+          span &bull;
+          span Скидка до 20% #[br]
+          p Узнать подробнее о предложении?
 
+      .sprite-click-me-icon-right
+    .sprite-callback
     section.main-section
       h1
         | Искусство обращения
