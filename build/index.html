@@ -4,10 +4,53 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="./css/main.css?v=1659016113487">
+		<link rel="stylesheet" href="./css/main.css?v=1659088333690">
 	</head>
 	<body>
 		<body>
+			<div class="modal" id="myModal">
+				<div class="modal-content">
+					<div class="modal-close">
+						<div class="modal-close-area"></div>
+						<div class="modal-close-btn"><span class="modal-close-btn__burger"></span></div>
+					</div>
+					<div class="modal-main">
+						<h1>Форма обратной связи</h1>
+						<p>Заполните форму и получите выгодное предложение</p>
+						<form>
+							<label for="name">Ваше имя</label>
+							<input id="fname" type="text" name="firstname">
+							<label for="number">Номер телефона</label>
+							<input id="lname" type="text" name="lastname" placeholder="+7 (___) ___-__-__">
+							<label for="subject">Опишите свою ситуацию</label>
+							<textarea id="subject" name="subject"></textarea>
+							<div class="modal-content__wrapper">
+								<div class="list">
+									<label class="list__container">
+										<input class="list__container--input" type="checkbox"><span class="list__container--checkmark"></span><span class="list__container--text">Я прочитал и согласен с политикой конфиденциальности</span>
+									</label>
+									<input type="submit" value="Оставить заявку">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<section class="mobile-menu-page">
+				<div class="mobile-menu-page__header">
+					<p>Меню</p>
+				</div>
+				<div class="mobile-menu-page__body">
+					<ul class="menu-nav">
+						<li class="menu-nav__item"><a href="#">Каталог объектов</a></li>
+						<li class="menu-nav__item"><a href="#">Блог</a></li>
+						<li class="menu-nav__item"><a href="#">Команда</a></li>
+						<li class="menu-nav__item"><a href="#">FAQ</a></li>
+						<li class="menu-nav__item"><a href="#">Контакты</a></li>
+					</ul>
+					<button type="button">Оставить заявку</button>
+				</div>
+			</section>
 			<nav class="nav">
 				<div class="nav__logo"><span class="sprite-logo"></span>
 					<h1>Отдел продаж</h1>
@@ -24,10 +67,11 @@
 				<div class="nav__contact">
 					<div class="wrapper"><a href="#">
 							<div class="sprite-nav-icon-phone"></div><span>+7 (495) 659-99-88</span></a>
-						<button type="button">Заказать звонок</button>
+						<button id="modalBtn" type="button">МОДАЛЬНОЕ ОКНО</button>
 					</div>
 				</div>
 			</nav>
+			<div class="menu-btn"><span class="menu-btn__burger"></span></div>
 			<main>
 				<div class="click-me">
 					<div class="wrapper">
@@ -185,7 +229,7 @@
 				document.getElementsByTagName('head')[0].appendChild(script);
 			}
 		</script>
-		<script src="./js/vendor.js?v=1659016113487"></script>
-		<script src="./js/main.js?v=1659016113487"></script>
+		<script src="./js/vendor.js?v=1659088333690"></script>
+		<script src="./js/main.js?v=1659088333690"></script>
 	</body>
 </html>

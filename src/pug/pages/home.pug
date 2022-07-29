@@ -1,5 +1,47 @@
 body
 
+  #myModal.modal
+    .modal-content
+      .modal-close
+        .modal-close-area
+        .modal-close-btn
+          span.modal-close-btn__burger
+      .modal-main
+        h1 Форма обратной связи
+        p Заполните форму и получите выгодное предложение
+        form
+          label(for="name") Ваше имя
+          input#fname(type="text", name="firstname")
+          label(for="number") Номер телефона
+          input#lname(type="text", name="lastname", placeholder="+7 (___) ___-__-__")
+          label(for="subject") Опишите свою ситуацию
+          textarea#subject(name="subject")
+          .modal-content__wrapper
+            .list
+              label.list__container
+                input.list__container--input(type="checkbox")
+                span.list__container--checkmark
+                span.list__container--text Я прочитал и согласен с политикой конфиденциальности
+              input(type="submit", value="Оставить заявку")
+
+
+  section.mobile-menu-page
+    .mobile-menu-page__header
+      p Меню
+    .mobile-menu-page__body
+      ul.menu-nav
+        li.menu-nav__item
+          a(href="#") Каталог объектов
+        li.menu-nav__item
+          a(href="#") Блог
+        li.menu-nav__item
+          a(href="#") Команда
+        li.menu-nav__item
+          a(href="#") FAQ
+        li.menu-nav__item
+          a(href="#") Контакты
+      button(type="button") Оставить заявку
+
   nav.nav
     .nav__logo
       span.sprite-logo
@@ -21,7 +63,10 @@ body
           a(href="#")
             .sprite-nav-icon-phone
             span +7 (495) 659-99-88
-          button(type="button") Заказать звонок
+          button#modalBtn(type="button") МОДАЛЬНОЕ ОКНО
+
+  .menu-btn
+    span.menu-btn__burger
 
 
   main
@@ -43,11 +88,6 @@ body
         | с недвижимостью
       p Недвижимость – это то, чем мы живём и то, что заставляет нас двигаться вперёд. Отвечаем за результат с 2015 года
       button(type="button") Получить планировки и цены
-
-    //- +lazyPicture({
-    //-   src: `${baseDir}images/main-photo.webp`,
-    //-   alt: '',
-    //- }).main-photo
 
     section.photo
 
